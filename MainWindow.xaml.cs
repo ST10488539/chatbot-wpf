@@ -12,6 +12,7 @@ namespace WpfApp1
 {
     public partial class MainWindow : Window
     {
+    
         private CyberSecurityChatbot.ResponseHandler botBrain = new CyberSecurityChatbot.ResponseHandler();
         private Random random = new Random();
         private List<Brush> backgrounds = new List<Brush>()
