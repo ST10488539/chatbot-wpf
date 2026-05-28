@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WpfApp1
 {
-    internal class ChatMemory
+    public class ChatMessage
     {
-        public Dictionary<string,string> UserMemory= new Dictionary<string,string>();
-        public string LastTopic { get; set; }
+        public string Sender { get; set; }
+        public string Text { get; set; }
+        public string Timestamp { get; set; }
+
+        public ChatMessage(string sender, string text)
+        {
+            Sender = sender;
+            Text = text;
+            // Automatically records the current time (e.g., 13:24)
+            Timestamp = DateTime.Now.ToString("HH:mm"); 
+        }
     }
 }
