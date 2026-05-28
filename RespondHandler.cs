@@ -7,7 +7,7 @@ namespace CyberSecurityChatbot
     {
         private Dictionary<string, List<string>> responses;
         private Random random = new Random();
-        private string lastTopic = "";
+        private string lastTopic = "";  
         private Dictionary<string, string> memory = new Dictionary<string, string>();
 
         public ResponseHandler()
